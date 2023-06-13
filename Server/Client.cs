@@ -36,7 +36,7 @@ namespace Server
                     {
                         case 5:
                             var msg = _PacketReader.ReadMessage();
-                            Console.WriteLine($"[{DateTime.Now}]:Message received!(msg");
+                            Console.WriteLine($"[{DateTime.Now}]:Message received!{msg}");
                             Program.BroadcatMessage($"[{DateTime.Now}]:[{Username}]:{msg}");
                             break;
                         default:
